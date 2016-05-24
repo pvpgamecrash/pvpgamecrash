@@ -14,6 +14,30 @@
     a{
       color: green;
     }
+   #navigation{
+     width: 1000px;
+     height: 30px;
+     background: #101010;
+     color: #e0e0e0;
+}
+.menu_item{
+     width: 200px;
+     height: 30px;
+     line-height: 30px;
+     text-indent: 8px;
+     overflow: hidden;
+}
+.submenu{
+     position: absolute;
+     top: 30px;
+}
+ .submenu a{
+     display: block;
+     width: 200px;
+     height: 30px;
+     background: #e0e0e0;
+     color: #101010;
+}
    </style>
     <title> Youtube Blog </title>
     <meta charset="utf - 8">
@@ -30,7 +54,17 @@
     <img src= "http://www.wired.com/wp-content/uploads/2015/02/Relish_Guitars_cherry.jpg"
     width = "203">
     <h2>Latest Info</h2>
-    <p>
+  <div id=\"navigation\">
+     <div class=\"menu_item\">Menu Title
+          <div class=\"submenu\">
+               <a href=\"#\">Link</a>
+               <a href=\"#\">Link</a>
+               <a href=\"#\">Link</a>
+               <a href=\"#\">Link</a>
+          </div>
+     </div>
+</div>
+<p>
       I am going to be making mostly guitar and kendama videos. 
       Also gaming videos like Minecraft. <br>
       if you haven't heard. If you have any other ideas for videos email me <br>
