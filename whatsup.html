@@ -49,6 +49,65 @@ a:active {
   <link rel="icon" href="http://example.com/favicon.png">
   </head>
   <body>
+<script>
+var yoyo = {
+    name: "Yoyo",
+    type: "turtle"
+}
+
+var simba = {
+    name: "Simba",
+    type: "lion"
+}
+
+var dolphy = {
+    name: "Dolphy",
+    type: "dolphin"
+}
+
+function swim(n) {
+    console.log("My name is", this.name, ", I am a", this.type, "and I just swam", n, "feet")
+}
+
+function run(n) {
+    console.log("My name is", this.name,  ", I am a", this.type, "and I just ran", n, "feet")
+}
+
+Object.prototype.respondTo = function(method) {
+    return !!(this[method] && (typeof this[method] === "function"));
+}
+
+yoyo.swim = swim;
+yoyo.swim(10);
+
+dolphy.swim = swim;
+dolphy.swim(80);
+
+simba.run = run;
+simba.run(200);
+
+yoyo.run = run;
+yoyo.run(2);
+
+yoyo.walk = run;
+yoyo.walk(1);
+
+console.log(simba.respondTo("swim"));
+console.log(simba.respondTo("run"));
+console.log(simba.respondTo("walk"));
+
+console.log(yoyo.respondTo("run"));
+console.log(yoyo.respondTo("walk"));
+console.log(yoyo.respondTo("fly"));
+
+if(dolphy.respondTo("run")) {
+    dolphy.run(10);
+}
+
+if(dolphy.respondTo("swim")) {
+    dolphy.swim(10);
+}
+</script>
 <form>
 <h2>My Blog!</h2>
     <p>
