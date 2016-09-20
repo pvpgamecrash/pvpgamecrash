@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html>
-<style>
+
+   <head>
+    <header>
+      <center> <h1>PvP GameCrash</h1> </center>
+    </header>
+  </head>
+  <body>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="https://www.youtube.com/c/pvpgamecrash">My Youtube Channel</a>
+    <a href="#">Downloads</a>
+    <a href="http://pvpgamecrash.github.io/">Home Page</a>
+    </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+ <center>
+    <img src = "http://megaicons.net/static/img/icons_sizes/8/178/512/buzz-message-outline-icon.png"
+    width = "150px" height = "150px">
+     <p>
+    Mention your ideas here!
+    </p>
+            <p>
+    <div class="gmail">   
+        <a href="mailto:pvpgamecrash@gmail.com?Subject=Ideas...">Email Me!</a>
+    </div>
+            </p>
+ </center>
+ <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+  </body>
+  <style>
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     background-image: url("http://cdn.pcwallart.com/images/solid-light-blue-wallpaper-2.jpg");                                                                                                                    
     
 }
-.gmail{
+.gmail a{
    background-color: #f44336;
     color: white;
     padding: 14px 25px;
@@ -16,8 +54,19 @@ body {
     display: inline-block;
     
 }
-.gmail: hover{
+.gmail a:hover{
      background-color: red;
+     -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: gray;
+}
+.gmail a,visited{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 .what_I_do{
      border: 2px solid gray;
@@ -76,43 +125,4 @@ body {
   }
 }
 </style>
-   <head>
-    <header>
-      <center> <h1>PvP GameCrash</h1> </center>
-    </header>
-  </head>
-  <body>
-  <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="https://www.youtube.com/c/pvpgamecrash">My Youtube Channel</a>
-    <a href="#">Downloads</a>
-    <a href="http://pvpgamecrash.github.io/">Home Page</a>
-    </div>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
- <center>
-    <img src = "http://megaicons.net/static/img/icons_sizes/8/178/512/buzz-message-outline-icon.png"
-    width = "150px" height = "150px">
-     <p>
-         My Email: pvpgamecrash@gmail.com.<br>
-                                          <br>
-    Mention your ideas here!
-    </p>
-            <p>
-    <div class = "gmail">   
-        <a href = "https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier">Go To Gmail</a>
-    </div>
-            </p>
- </center>
- <script>
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-</script>
-  </body>
 </html>
