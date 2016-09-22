@@ -8,15 +8,7 @@
     	* { padding: 0; margin: 0; }
     	canvas { background: #eee; display: block; margin: 0 auto; }
     </style>
-         <script>
-         function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
 
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
-         </script>
 </head>
 <body>
 
@@ -48,6 +40,15 @@ function closeNav() {
     </p>
 </center>
 <script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+
+
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
