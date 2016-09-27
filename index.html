@@ -143,7 +143,8 @@ body {
     width ="150px" height: ="150px"></center>
     </header>
     <center>
-           <i><b>Scroll Down</b></i>
+           <a href="#blog">Click Me to go to my Blog</a>
+
        </center>
 
        </div>
@@ -159,6 +160,7 @@ body {
                <br>
                 <br>
                  <br>
+              <div class="whatever" id ="blog">
                </p> 
                <h1>Blog</h1>
                <p>
@@ -173,6 +175,7 @@ body {
                <br>
                <h2>   Please go check the game out in the featured page located in the menu! </h2>
                </p>
+       </div>      
        </div>
     <a href="https://twitter.com/BraggTalon" class="twitter-follow-button" data-show-count="false">Follow @BraggTalon</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <!-- Place this tag in your head or just before your close body tag. -->
@@ -199,8 +202,34 @@ body {
     padding-bottom: 280px;
 }
        </style>
-
 <script>
+       $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+       <script>
 
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
@@ -210,7 +239,8 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
-var myVar;
+var myVar
+;
 
 function myFunction() {
     myVar = setTimeout(showPage, 3000);
