@@ -1,4 +1,48 @@
 <!DOCTYPE html>
   <html>
-  
+    <head>
+      <style>
+       .btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2bb87f);
+  background-image: -moz-linear-gradient(top, #3498db, #2bb87f);
+  background-image: -ms-linear-gradient(top, #3498db, #2bb87f);
+  background-image: -o-linear-gradient(top, #3498db, #2bb87f);
+  background-image: linear-gradient(to bottom, #3498db, #2bb87f);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 4px 3px 2px #000000;
+  font-family: Courier New;
+  color: #17ebeb;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #34add9);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #34add9);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #34add9);
+  background-image: -o-linear-gradient(top, #3cb0fd, #34add9);
+  background-image: linear-gradient(to bottom, #3cb0fd, #34add9);
+  text-decoration: none;
+}     
+      </style>
+        <script>
+      function crash () {
+      for (var i = 1; i >= 1; i--) {
+	console.log(i);
+}      
+      }  
+      </script>
+    </head>
+    <body>
+   <center>
+     <h1> Crash machine </h1>
+     <h2> If you press this button, it will crash your browser! </h2> 
+     <div class = "btn"><button onclick="crash ()"></button></div>
+      </center>
+    </body>
   </html>
