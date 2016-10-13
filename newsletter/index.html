@@ -1,1 +1,71 @@
+<html>
+  <head>
+    <style>
+ @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");   
+       body {
+      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 50s; /* Chrome and Safari */
+    }
 
+    @keyframes colorchange
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+      .btn {
+  background: #d934c6;
+  background-image: -webkit-linear-gradient(top, #d934c6, #842bb8);
+  background-image: -moz-linear-gradient(top, #d934c6, #842bb8);
+  background-image: -ms-linear-gradient(top, #d934c6, #842bb8);
+  background-image: -o-linear-gradient(top, #d934c6, #842bb8);
+  background-image: linear-gradient(to bottom, #d934c6, #842bb8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+      .header {
+      background-color: gray;
+      };
+      .par{
+      font: inherit;
+      }
+    </style>
+  </head>  
+  <body>
+    <header class="header">
+      <h1>Newsletter</h1> 
+    </header>
+   <div class="par">
+     <p> Please subscribe to my news letter</p>
+    </div>
+    <a class="btn" href="mailto:pvpgamecrash@gmail.com?Subject=Sign Up">Sign up</a>
+  </body>
+</html>
