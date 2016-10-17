@@ -1,7 +1,7 @@
 (function(global) {
 	var questions = [{"What is Talon's favorite animal?":"cat"},
 					 {"What does Talon code?":"javascript"}],
-		q = q.length,
+		q = questions.length,
 		qa,
 		question,
 		score = 0;
