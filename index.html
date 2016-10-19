@@ -1,63 +1,57 @@
 <html lang="en">
    <head>
-          <link rel="icon" href="img/Logomakr_9Y8bw4.png" type="image/x-icon">
-
+      <link rel="icon" href="img/Logomakr_9Y8bw4.png" type="image/x-icon">
       <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>     
+         function openNav() {
+             document.getElementById("mySidenav").style.width = "250px";
+             document.getElementById("main").style.marginLeft = "250px";
+             document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+         }
+         
+         function closeNav() {
+             document.getElementById("mySidenav").style.width = "0";
+             document.getElementById("main").style.marginLeft= "0";
+             document.body.style.backgroundColor = "white";
+         }
+      </script>     
       <style>
-      .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: white;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}     
+         .sidenav {
+         height: 100%;
+         width: 0;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: 0;
+         overflow-x: hidden;
+         transition: 0.5s;
+         padding-top: 60px;
+         }
+         .sidenav a {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 25px;
+         color: white;
+         display: block;
+         transition: 0.3s
+         }
+         .sidenav a:hover, .offcanvas a:focus{
+         color: white;
+         }
+         .sidenav .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 36px;
+         margin-left: 50px;
+         }
+         #main {
+         transition: margin-left .5s;
+         padding: 16px;
+         }
+         @media screen and (max-height: 450px) {
+         .sidenav {padding-top: 15px;}
+         .sidenav a {font-size: 18px;}
+         }     
       </style>
       <script>
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -120,137 +114,135 @@ function closeNav() {
       <![endif]-->
    </head>
    <body>
-     
-   <div id="mySidenav" class="sidenav">
-  <center>
-      <img src="img/Logomakr_9Y8bw4.png" width="100" height="100">
-      </center>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="https://pvpgamecrash.github.io/blog">Blog</a>
-  <a href="https://pvpgamecrash.github.io/breakout/breakout">Breakout</a>
-  <a href="https://pvpgamecrash.github.io/texteditor">Text Editor</a>
-  <a href="https://pvpgamecrash.github.io/crash">Crash machine</a>
-  <a href="https://pvpgamecrash.github.io/sports/aleague">Sports Forum</a>
-  <a href="https://pvpgamecrash.github.io/projects">Projects Portfolio</a>
-  <a href="https://pvpgamecrash.github.io/quiz">Quiz</a>
-  <a href="https://pvpgamecrash.github.io/pong">Pong</a>
+      <div id="mySidenav" class="sidenav">
+         <center>
+            <img src="img/Logomakr_9Y8bw4.png" width="100" height="100">
+         </center>
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <a href="https://pvpgamecrash.github.io/blog">Blog</a>
+         <a href="https://pvpgamecrash.github.io/breakout/breakout">Breakout</a>
+         <a href="https://pvpgamecrash.github.io/texteditor">Text Editor</a>
+         <a href="https://pvpgamecrash.github.io/crash">Crash machine</a>
+         <a href="https://pvpgamecrash.github.io/sports/aleague">Sports Forum</a>
+         <a href="https://pvpgamecrash.github.io/projects">Projects Portfolio</a>
+         <a href="https://pvpgamecrash.github.io/quiz">Quiz</a>
+         <a href="https://pvpgamecrash.github.io/pong">Pong</a>
       </div>
-       <div id="main">      
-       <div class="brand">Talon Bragg</div>
-      <div class="address-bar">Welcome to My Website</div>
-          <center> <span class="menuButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span> </center>
-          <header></header>
-      <div class="container">
-         <div class="row">
-            <div class="box">
-               <div class="col-lg-12 text-center">
-                  <div id="carousel-example-generic" class="carousel slide">
-                     <!-- Indicators -->
-                     <ol class="carousel-indicators hidden-xs">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                     </ol>
-                     <!-- Wrapper for slides -->
-                     <div class="carousel-inner">
-                        <div class="item active">
-                           <img class="img-responsive img-full" src="http://tympanus.net/Development/NavigationIndicators/img/3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                           <img class="img-responsive img-full" src="http://tympanus.net/Development/NavigationIndicators/img/14.jpg" alt="">
-                        </div>
-                        <div class="item">
-                           <img class="img-responsive img-full" src="index/img/Pics for My Website/DeathtoStock_Wired7.jpg" alt="">
-                        </div>
-                     </div>
-                     <!-- Controls -->
-                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                     <span class="icon-prev"></span>
-                     </a>
-                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                     <span class="icon-next"></span>
-                     </a>
-                  </div>
-                  <h2 class="brand-before">
-                     <small>Welcome to</small>
-                  </h2>
-                  <h1 class="brand-name">Talon's Website</h1>
-                  <hr class="tagline-divider">
-                  <h2>
-                     <small>
-                        By
-                        <strong>Obviously: Talon Bragg, Not So Obviously: Shreyas lad, and Sid Hegde</strong>
-                     </small>
-                  </h2>
-               <!-- LikeBtn.com BEGIN -->
-<span class="likebtn-wrapper" data-theme="custom" data-btn_size="37" data-icon_l="hrt4" data-icon_d="hrt12" data-icon_l_c_v="#fb0505" data-bg_c="#fefdfd" data-i18n_like="Great!" data-identifier="item_1"></span>
-<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-<!-- LikeBtn.com END -->
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="box">
-               <div class="col-lg-12">
-                  <hr>
-                  <h2 class="intro-text text-center">Welcome To
-                     <strong>My Website</strong>
-                  </h2>
-                  <hr>
-                  <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
-                  <hr class="visible-xs">
-                  <p>Here you can learn about why my website is worth visiting.</p>
-                  <p>It is good for you to be on this website if you like simple games. It is also good to be on this website if you like to read people's blogs. The Reason is simple: <strong>I Do That.</strong></p>
-                  <p>I update my blog a lot and I also try to make games, oh, and I forgot to mention that I have a youtube channel. I will try to make videos as much as possible. Please go read my blog which is listed in the navigation bar.</p>
-                  <p>Just something random: My favorite animal is a "cat".</p>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="box">
-               <div class="col-lg-12">
-                  <hr>
-                  <h2 class="intro-text text-center">Thank
-                     <strong>You</strong>
-                  </h2>
-                  <hr>
-                 
-                  <h1>Thank you for visiting. Best regards, Talon. :)</h1>
-                 
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- /.container -->
-      <footer>
+      <div id="main">
+         <img src="img/Logomakr_9Y8bw4.png" width="100" height="100">
+         <div class="brand">Talon Bragg</div>
+         <div class="address-bar">Welcome to My Website</div>
+         <center> <span class="menuButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span> </center>
+         <header></header>
          <div class="container">
             <div class="row">
-               <div class="col-lg-12 text-center">
-                  <p>Copyright &copy; talonbragg.com 2016</p>
+               <div class="box">
+                  <div class="col-lg-12 text-center">
+                     <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                           <div class="item active">
+                              <img class="img-responsive img-full" src="http://tympanus.net/Development/NavigationIndicators/img/3.jpg" alt="">
+                           </div>
+                           <div class="item">
+                              <img class="img-responsive img-full" src="http://tympanus.net/Development/NavigationIndicators/img/14.jpg" alt="">
+                           </div>
+                           <div class="item">
+                              <img class="img-responsive img-full" src="index/img/Pics for My Website/DeathtoStock_Wired7.jpg" alt="">
+                           </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="icon-next"></span>
+                        </a>
+                     </div>
+                     <h2 class="brand-before">
+                        <small>Welcome to</small>
+                     </h2>
+                     <h1 class="brand-name">Talon's Website</h1>
+                     <hr class="tagline-divider">
+                     <h2>
+                        <small>
+                        By
+                        <strong>Obviously: Talon Bragg, Not So Obviously: Shreyas lad, and Sid Hegde</strong>
+                        </small>
+                     </h2>
+                     <!-- LikeBtn.com BEGIN -->
+                     <span class="likebtn-wrapper" data-theme="custom" data-btn_size="37" data-icon_l="hrt4" data-icon_d="hrt12" data-icon_l_c_v="#fb0505" data-bg_c="#fefdfd" data-i18n_like="Great!" data-identifier="item_1"></span>
+                     <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+                     <!-- LikeBtn.com END -->
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="box">
+                  <div class="col-lg-12">
+                     <hr>
+                     <h2 class="intro-text text-center">Welcome To
+                        <strong>My Website</strong>
+                     </h2>
+                     <hr>
+                     <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+                     <hr class="visible-xs">
+                     <p>Here you can learn about why my website is worth visiting.</p>
+                     <p>It is good for you to be on this website if you like simple games. It is also good to be on this website if you like to read people's blogs. The Reason is simple: <strong>I Do That.</strong></p>
+                     <p>I update my blog a lot and I also try to make games, oh, and I forgot to mention that I have a youtube channel. I will try to make videos as much as possible. Please go read my blog which is listed in the navigation bar.</p>
+                     <p>Just something random: My favorite animal is a "cat".</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="box">
+                  <div class="col-lg-12">
+                     <hr>
+                     <h2 class="intro-text text-center">Thank
+                        <strong>You</strong>
+                     </h2>
+                     <hr>
+                     <h1>Thank you for visiting. Best regards, Talon. :)</h1>
+                  </div>
                </div>
             </div>
          </div>
-      </footer>
-      <!-- jQuery -->
-      <script src="js/jquery.js"></script>
-      <!-- Bootstrap Core JavaScript -->
-      <script src="js/bootstrap.min.js"></script>
-      <!-- Script to Activate the Carousel -->
-      <script>
-         $('.carousel').carousel({
-             interval: 5000 //changes the speed
-         })
-      </script>
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <!-- Money Maker -->
-      <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2002315692954470"
-         data-ad-slot="4306500747"
-         data-ad-format="auto"></ins>
-      <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+         <!-- /.container -->
+         <footer>
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12 text-center">
+                     <p>Copyright &copy; talonbragg.com 2016</p>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- jQuery -->
+         <script src="js/jquery.js"></script>
+         <!-- Bootstrap Core JavaScript -->
+         <script src="js/bootstrap.min.js"></script>
+         <!-- Script to Activate the Carousel -->
+         <script>
+            $('.carousel').carousel({
+                interval: 5000 //changes the speed
+            })
+         </script>
+         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+         <!-- Money Maker -->
+         <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-2002315692954470"
+            data-ad-slot="4306500747"
+            data-ad-format="auto"></ins>
+         <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
       </div>
-      </body>
-      </html>
+   </body>
+</html>
