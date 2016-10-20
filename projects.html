@@ -49,6 +49,11 @@
 						padding: 50px;
 					}			
 			</style>
+			<script>
+			$(window).scroll(function(){
+    			$(".style_header").css("opacity", 1 - $(window).scrollTop() / 250);
+  			});
+			</script>
 		</head>
 		<body>
 		<center>
