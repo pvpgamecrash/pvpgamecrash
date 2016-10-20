@@ -50,11 +50,18 @@
 					}			
 			</style>
 			<script>
-			$(window).scroll(function(i){
-    				var scrollVar = $(window).scrollTop();
-    				$('section#about .inner').children('.style_header h1').css({'top': .7*scrollVar });
-    				$('section#about .inner').children('.style_header h1').css({'opacity':( 100-scrollVar )/100});
-			})			
+			var lastScrollTop = 0;
+
+$(window).scroll(function () {
+
+var st = $(this).scrollTop();
+        if (st < lastScrollTop){
+            $('.navbar ').fadeIn();
+        } else {
+          $('.navbar ').fadeOut();
+        }
+        lastScrollTop = st;
+  })			
 			</script>
 		</head>
 		<body>
