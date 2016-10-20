@@ -50,7 +50,11 @@
 					}			
 			</style>
 			<script>
-			$('h1').css({'opacity':( 100-$(window).scrollTop() )/100});
+			$(window).scroll(function(i){
+    				var scrollVar = $(window).scrollTop();
+    				$('section#about .inner').children('h2').css({'top': .7*scrollVar });
+    				$('section#about .inner').children('h2').css({'opacity':( 100-scrollVar )/100});
+			})			
 			</script>
 		</head>
 		<body>
