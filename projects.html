@@ -56,9 +56,9 @@ $(window).scroll(function () {
 
 var st = $(this).scrollTop();
         if (st < lastScrollTop){
-            $('.style_header ').fadeIn();
+            $('.style_header h1, h2 ').fadeIn();
         } else {
-          $('.style_header ').fadeOut();
+          $('.style_header h1, h2 ').fadeOut();
         }
         lastScrollTop = st;
   })			
