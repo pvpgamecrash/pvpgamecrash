@@ -50,9 +50,7 @@
 					}			
 			</style>
 			<script>
-			$(window).scroll(function(){
-    			$(".style_header").css("opacity", 1 - $(window).scrollTop() / 250);
-  			});
+			$('h1').css({'opacity':( 100-$(window).scrollTop() )/100});
 			</script>
 		</head>
 		<body>
